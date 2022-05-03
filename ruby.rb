@@ -34,16 +34,27 @@
 
 # Working with strings
 
-phrase = "Bob\'s Academy"
-phrase_stripped = "    Bob\'s Academy    "
-puts "Bob\'s Academy"
-puts "Bob\'s\n Academy"
-puts phrase.upcase()
-puts phrase.downcase()
-puts phrase_stripped.strip()
-puts phrase.length()
-puts phrase.include? "Aca"
-puts phrase[0]
-puts phrase[0,3]
-puts phrase.index("Aca")
-puts "programming".upcase()
+# phrase = "Bob\'s Academy"
+# phrase_stripped = "    Bob\'s Academy    "
+# puts "Bob\'s Academy"
+# puts "Bob\'s\n Academy"
+# puts phrase.upcase()
+# puts phrase.downcase()
+# puts phrase_stripped.strip()
+# puts phrase.length()
+# puts phrase.include? "Aca"
+# puts phrase[0]
+# puts phrase[0,3]
+# puts phrase.index("Aca")
+# puts "programming".upcase()
+
+# Math & Numbers
+
+num = 20
+puts 5 + 5
+puts 25 / num
+puts num.abs()
+puts num.round()
+puts num.floor()
+puts Math.sqrt(num)
+puts Math.log(num)
