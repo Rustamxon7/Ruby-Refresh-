@@ -24,10 +24,26 @@
 
 # DATA TYPES
 
-name = "Mike"
-age = 75
-occupation = "programmer"
-gpa = 3.2443523
-ismale = true
-istale = false
-flaws = nil
+# name = "Mike"
+# age = 75
+# occupation = "programmer"
+# gpa = 3.2443523
+# ismale = true
+# istale = false
+# flaws = nil
+
+# Working with strings
+
+phrase = "Bob\'s Academy"
+phrase_stripped = "    Bob\'s Academy    "
+puts "Bob\'s Academy"
+puts "Bob\'s\n Academy"
+puts phrase.upcase()
+puts phrase.downcase()
+puts phrase_stripped.strip()
+puts phrase.length()
+puts phrase.include? "Aca"
+puts phrase[0]
+puts phrase[0,3]
+puts phrase.index("Aca")
+puts "programming".upcase()
