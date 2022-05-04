@@ -67,9 +67,24 @@
 
 # Building a Calculator
 
-puts "Enter a number: "
-num1 = gets.chomp().to_f
-puts "Enter another number"
-num2 = gets.chomp().to_f
+# puts "Enter a number: "
+# num1 = gets.chomp().to_f
+# puts "Enter another number"
+# num2 = gets.chomp().to_f
 
-puts (num1 + num2)
+# puts (num1 + num2)
+
+# Building a Mad Libs Game
+
+puts "Enter a color: "
+color = gets.chomp().downcase()
+
+puts "Enter a plural_noun: "
+plural_noun = gets.chomp()
+
+puts "Enter a celebrity: "
+celebrity = gets.chomp().downcase()
+
+puts ("Roses are " + color)
+puts (plural_noun + " are blue")
+puts ("I love " + celebrity)
