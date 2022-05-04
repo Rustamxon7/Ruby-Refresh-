@@ -338,22 +338,36 @@
 
 # Classes & Objects
 
+# class Book
+#   attr_accessor :title, :author, :pages
+# end
+
+# book1 = Book.new()
+# book1.title = "Ruby Gems"
+# book1.author = "Bob Robert"
+# book1.pages = 434
+
+# puts book1.title
+# puts book1.author
+# puts book1.pages
+
+# book2 = Book.new()
+# book2.title = "Lord of the Rings"
+# book2.author = "Tolkein"
+# book2.pages = 554
+
+# puts book2.title
+
+# Initialize Method
+
 class Book
   attr_accessor :title, :author, :pages
+  def initialize(title, author, pages)
+    @title = title
+    @author = author
+    @pages = pages
+  end
 end
 
-book1 = Book.new()
-book1.title = "Ruby Gems"
-book1.author = "Bob Robert"
-book1.pages = 434
-
+book1 = Book.new("Bob's adventures", "Bob", 343)
 puts book1.title
-puts book1.author
-puts book1.pages
-
-book2 = Book.new()
-book2.title = "Lord of the Rings"
-book2.author = "Tolkein"
-book2.pages = 554
-
-puts book2.title
