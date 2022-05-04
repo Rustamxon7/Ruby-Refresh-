@@ -91,15 +91,25 @@
 
 # Arrays
 
-friends = Array.new
+# friends = Array.new
 
-friends[0] = "Michael"
-friends[2] = "Fox"
-friends[5] = "Holly"
+# friends[0] = "Michael"
+# friends[2] = "Fox"
+# friends[5] = "Holly"
 
-friends = Array["Bob", "Alice"]
+# friends = Array["Bob", "Alice"]
 
 
-puts friends.include?("Fox")
-puts friends.reverse()
-puts friends.sort()
+# puts friends.include?("Fox")
+# puts friends.reverse()
+# puts friends.sort()
+
+# Hashes
+
+states = {
+  :Pennsylvania => "PA",
+  "New York" => "NY",
+  "Ohio" => "OH",
+}
+
+puts states[:Pennsylvania]
