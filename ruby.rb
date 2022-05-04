@@ -116,8 +116,16 @@
 
 # Methods
 
-def sayhi(name="unknown", age= -1)
-  puts "Hello " + name + " Are you " + age.to_s + " ?"
+# def sayhi(name="unknown", age= -1)
+#   puts "Hello " + name + " Are you " + age.to_s + " ?"
+# end
+
+# sayhi("Bob", 20)
+
+# Return Statement
+
+def cube(num=1)
+  return num * num * num, 70
 end
 
-sayhi("Bob", 20)
+puts cube(3)[1]
