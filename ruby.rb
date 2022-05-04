@@ -76,15 +76,30 @@
 
 # Building a Mad Libs Game
 
-puts "Enter a color: "
-color = gets.chomp().downcase()
+# puts "Enter a color: "
+# color = gets.chomp().downcase()
 
-puts "Enter a plural_noun: "
-plural_noun = gets.chomp()
+# puts "Enter a plural_noun: "
+# plural_noun = gets.chomp()
 
-puts "Enter a celebrity: "
-celebrity = gets.chomp().downcase()
+# puts "Enter a celebrity: "
+# celebrity = gets.chomp().downcase()
 
-puts ("Roses are " + color)
-puts (plural_noun + " are blue")
-puts ("I love " + celebrity)
+# puts ("Roses are " + color)
+# puts (plural_noun + " are blue")
+# puts ("I love " + celebrity)
+
+# Arrays
+
+friends = Array.new
+
+friends[0] = "Michael"
+friends[2] = "Fox"
+friends[5] = "Holly"
+
+friends = Array["Bob", "Alice"]
+
+
+puts friends.include?("Fox")
+puts friends.reverse()
+puts friends.sort()
