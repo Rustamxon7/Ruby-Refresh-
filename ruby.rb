@@ -281,3 +281,21 @@
 =begin
   Multi line comment
 =end
+
+# Reading files
+
+file = File.open("employees.txt", "r") do |f|
+  puts f.readchar()
+  puts f.readchar()
+  puts f.readchar()
+
+  puts f.readline()
+
+  for line in f.readlines()
+    puts line
+  end
+end
+
+puts file.read()
+
+file.close()
