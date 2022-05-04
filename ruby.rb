@@ -302,23 +302,36 @@
 
 # Write files
 
-file = File.open("employees.txt", "a") do |f|
-  f.write("\nHowerd, Coder")
-end
+# file = File.open("employees.txt", "a") do |f|
+#   f.write("\nHowerd, Coder")
+# end
 
-file = File.open("employees.txt", "r+") do |f|
-  f.readline()
-  f.write("Overridden")
-end
+# file = File.open("employees.txt", "r+") do |f|
+#   f.readline()
+#   f.write("Overridden")
+# end
 
-file = File.open("index.html", "w") do |f|
-  f.write("<h1>New HTML file</h1>")
-end
+# file = File.open("index.html", "w") do |f|
+#   f.write("<h1>New HTML file</h1>")
+# end
 
-file = File.open("index.html", "r+") do |f|
-  puts f.readline()
-end
+# file = File.open("index.html", "r+") do |f|
+#   puts f.readline()
+# end
 
-file = File.open("index.html", "r+") do |f|
-  f.write("<h1>New HTML file</h1>")
+# file = File.open("index.html", "r+") do |f|
+#   f.write("<h1>New HTML file</h1>")
+# end
+
+# Handling Errors
+
+lucky_nums = [13, 32, 13, 43, 40]
+
+begin 
+  lucky_nums["Dog"]
+  # num = 10 / 0 
+rescue ZeroDivisionError
+  puts "Division by zero error"
+rescue TypeError => e
+  puts e
 end
