@@ -360,14 +360,37 @@
 
 # Initialize Method
 
-class Book
-  attr_accessor :title, :author, :pages
-  def initialize(title, author, pages)
-    @title = title
-    @author = author
-    @pages = pages
+# class Book
+#   attr_accessor :title, :author, :pages
+#   def initialize(title, author, pages)
+#     @title = title
+#     @author = author
+#     @pages = pages
+#   end
+# end
+
+# book1 = Book.new("Bob's adventures", "Bob", 343)
+# puts book1.title
+
+# Object Methods
+
+class Student
+  attr_accessor :name, :major, :gpa
+  def initialize(name, major, gpa)
+    @name = name
+    @major = major
+    @gpa = gpa
+  end
+
+  def has_honers
+    if @gpa >= 3.5
+      return true
+    end
+    return false
   end
 end
 
-book1 = Book.new("Bob's adventures", "Bob", 343)
-puts book1.title
+student1 = Student.new("Jim", "Business", 2.6)
+student2 = Student.new("Bob", "Art", 3.6)
+
+puts student1.has_honers
