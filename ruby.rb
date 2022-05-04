@@ -248,16 +248,28 @@
 
 # For Loop
 
-cars = ["BMW", "Ford", "Mazda", "Fusion", "Chevrolet"]
+# cars = ["BMW", "Ford", "Mazda", "Fusion", "Chevrolet"]
 
-6.times do |index|
-  puts index
+# 6.times do |index|
+#   puts index
+# end
+
+# for index in 0...5 
+#   puts index
+# end
+
+# cars.each do |car|
+#   puts car
+# end
+
+# Exponend Method
+
+def pow(base_num, pow_num)
+  result = 1
+  pow_num.times do |index|
+    result = result * base_num
+  end
+  return result
 end
 
-for index in 0...5 
-  puts index
-end
-
-cars.each do |car|
-  puts car
-end
+puts pow(5, 2)
