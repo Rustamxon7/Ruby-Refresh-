@@ -221,27 +221,43 @@
 
 # Building a Guessing Game
 
-secret_word = "guessing"
-guess = ""
-guess_count = 0
-guess_limit = 3
-out_of_guesses = false
+# secret_word = "guessing"
+# guess = ""
+# guess_count = 0
+# guess_limit = 3
+# out_of_guesses = false
 
 
 
-while guess != secret_word and !out_of_guesses
-  if guess_count < guess_limit
-    puts guess_left = guess_limit - guess_count
-    puts "Enter guess: " 
-    guess = gets.chomp()
-    guess_count += 1
-  else
-    out_of_guesses = true
-  end
+# while guess != secret_word and !out_of_guesses
+#   if guess_count < guess_limit
+#     puts guess_left = guess_limit - guess_count
+#     puts "Enter guess: " 
+#     guess = gets.chomp()
+#     guess_count += 1
+#   else
+#     out_of_guesses = true
+#   end
+# end
+
+# if out_of_guesses
+#   puts "You Lose 😔"
+# else
+#   puts "You Won!"
+# end
+
+# For Loop
+
+cars = ["BMW", "Ford", "Mazda", "Fusion", "Chevrolet"]
+
+6.times do |index|
+  puts index
 end
 
-if out_of_guesses
-  puts "You Lose 😔"
-else
-  puts "You Won!"
+for index in 0...5 
+  puts index
+end
+
+cars.each do |car|
+  puts car
 end
