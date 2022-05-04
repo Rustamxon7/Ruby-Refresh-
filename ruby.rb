@@ -284,18 +284,41 @@
 
 # Reading files
 
-file = File.open("employees.txt", "r") do |f|
-  puts f.readchar()
-  puts f.readchar()
-  puts f.readchar()
+# file = File.open("employees.txt", "r") do |f|
+#   puts f.readchar()
+#   puts f.readchar()
+#   puts f.readchar()
 
-  puts f.readline()
+#   puts f.readline()
 
-  for line in f.readlines()
-    puts line
-  end
+#   for line in f.readlines()
+#     puts line
+#   end
+# end
+
+# puts file.read()
+
+# file.close()
+
+# Write files
+
+file = File.open("employees.txt", "a") do |f|
+  f.write("\nHowerd, Coder")
 end
 
-puts file.read()
+file = File.open("employees.txt", "r+") do |f|
+  f.readline()
+  f.write("Overridden")
+end
 
-file.close()
+file = File.open("index.html", "w") do |f|
+  f.write("<h1>New HTML file</h1>")
+end
+
+file = File.open("index.html", "r+") do |f|
+  puts f.readline()
+end
+
+file = File.open("index.html", "r+") do |f|
+  f.write("<h1>New HTML file</h1>")
+end
