@@ -59,7 +59,7 @@
 # puts Math.sqrt(num)
 # puts Math.log(num)
 
-# Getting User Input
+# Getting name Input
 
 # puts "Enter Your Name: "
 # name = gets.chomp()
@@ -106,10 +106,18 @@
 
 # Hashes
 
-states = {
-  :Pennsylvania => "PA",
-  "New York" => "NY",
-  "Ohio" => "OH",
-}
+# states = {
+#   :Pennsylvania => "PA",
+#   "New York" => "NY",
+#   "Ohio" => "OH",
+# }
 
-puts states[:Pennsylvania]
+# puts states[:Pennsylvania]
+
+# Methods
+
+def sayhi(name="unknown", age= -1)
+  puts "Hello " + name + " Are you " + age.to_s + " ?"
+end
+
+sayhi("Bob", 20)
