@@ -50,11 +50,18 @@
 
 # Math & Numbers
 
-num = 20
-puts 5 + 5
-puts 25 / num
-puts num.abs()
-puts num.round()
-puts num.floor()
-puts Math.sqrt(num)
-puts Math.log(num)
+# num = 20
+# puts 5 + 5
+# puts 25 / num
+# puts num.abs()
+# puts num.round()
+# puts num.floor()
+# puts Math.sqrt(num)
+# puts Math.log(num)
+
+# Getting User Input
+
+# puts "Enter Your Name: "
+# name = gets.chomp()
+# puts ("Assalomu Alaikum " + name + ", nice to meet you!")
+
