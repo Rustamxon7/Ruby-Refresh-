@@ -325,13 +325,35 @@
 
 # Handling Errors
 
-lucky_nums = [13, 32, 13, 43, 40]
+# lucky_nums = [13, 32, 13, 43, 40]
 
-begin 
-  lucky_nums["Dog"]
-  # num = 10 / 0 
-rescue ZeroDivisionError
-  puts "Division by zero error"
-rescue TypeError => e
-  puts e
+# begin 
+#   lucky_nums["Dog"]
+#   # num = 10 / 0 
+# rescue ZeroDivisionError
+#   puts "Division by zero error"
+# rescue TypeError => e
+#   puts e
+# end
+
+# Classes & Objects
+
+class Book
+  attr_accessor :title, :author, :pages
 end
+
+book1 = Book.new()
+book1.title = "Ruby Gems"
+book1.author = "Bob Robert"
+book1.pages = 434
+
+puts book1.title
+puts book1.author
+puts book1.pages
+
+book2 = Book.new()
+book2.title = "Lord of the Rings"
+book2.author = "Tolkein"
+book2.pages = 554
+
+puts book2.title
